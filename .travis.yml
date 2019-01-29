@@ -1,0 +1,8 @@
+language: "node_js"
+node_js: "10"
+before_script:
+  - npm i eslint esm
+script:
+  - npx eslint .
+  - npx qunit test/index.js
+  
